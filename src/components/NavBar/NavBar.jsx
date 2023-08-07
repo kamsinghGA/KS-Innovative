@@ -32,7 +32,9 @@ export default function NavBar() {
           <li className='nav-item'>
             <Link className="navbar-brand" to="/testimonials">Testimonials</Link>
           </li>
-          <li className='nav-item'></li>
+          <li className='nav-item'>
+            <Link className="navbar-brand" to="/results">Results</Link>
+          </li>
         </ul>
       </div>
     </nav>

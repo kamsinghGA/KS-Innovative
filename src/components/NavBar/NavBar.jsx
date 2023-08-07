@@ -9,10 +9,12 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/services">Our Services</Link>
+      {/* Use regular anchor tags for smooth scrolling */}
+      <a href="#services">Our Services</a>
       &nbsp; | &nbsp;
-      <Link to="/contact-us">Let's Talk</Link>
-      &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      <a href="#contact">Let's Talk</a>
+      {/* Use Link for routing */}
+      &nbsp;&nbsp;<Link to="#" onClick={handleLogOut}>Log Out</Link>
     </nav>
   );
 }

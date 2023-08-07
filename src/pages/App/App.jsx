@@ -6,6 +6,9 @@ import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import ServicesSection from '../../components/ServicesSection/ServicesSection'; 
+import ContactPage from '../ContactPage/ContactPage';
+import ResultsPage from '../../pages/ResultsPage/ResultsPage';
+import AboutPage from '../../pages/AboutPage/AboutPage';
 
 
 export default function App() {
@@ -17,64 +20,25 @@ export default function App() {
           <>
             <NavBar user={user} setUser={setUser} />
             <nav>
-              <ul>
-                <li><Link to="services" smooth={true} duration={500}>Services</Link></li>
-                <li><Link to="contact" smooth={true} duration={500}>Contact Us</Link></li>
-              </ul>
+              {/* <ul>
+                <li><Link to="services" smooth={true} duration={500}>Our Services</Link></li>
+                <li><Link to="contact" smooth={true} duration={500}>Let's Talk</Link></li>
+              </ul> */}
             </nav>
             <Routes>
               <Route path="/services" element={<ServicesSection />} />
-              <Route path="/contact-us" element={<Contact />} />
+              <Route path="/contact-us" element={<ContactPage />} />
+              <Route path="/results" element={<ResultsPage />} /> 
+              <Route path="/about" element={<AboutPage />} /> 
             </Routes>
           </>
           :
           <AuthPage setUser={setUser} />
       }
-      <Element name="services">
-        <ServicesSection />
-      </Element>
-      <Element name="contact">
-        <Contact />
-      </Element>
+      <AboutPage />
+      <ServicesSection />
+      <ResultsPage />
+      <ContactPage />
     </main>
-  );
-}
-
-function Services() {
-  return (
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>We offer a wide range of services to meet your needs:</p>
-      <ul>
-        <li>Web Development</li>
-        <li>Graphic Design</li>
-        <li>Marketing Strategy</li>
-      </ul>
-    </section>
-  );
-}
-
-function Contact() {
-  return (
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>We'd love to hear from you. Feel free to get in touch:</p>
-      <address>
-        <p>Email: info@example.com</p>
-        <p>Phone: +123-456-7890</p>
-      </address>
-      <form>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" />
-
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" />
-
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
   );
 }

@@ -5,13 +5,14 @@ import './App.css';
 import NavBar from '../../components/NavBar/NavBar';
 import ServicesPage from '../ServicesPage/ServicesPage';
 import ContactPage from '../ContactPage/ContactPage'
-import TestimonialsPage from '../TestimonialsPage/TestimonialsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import HomePage from '../HomePage/HomePage';
+import ResultsPage from '../ResultsPage/ResultsPage'
+
 
 
 export default function App() {
-  const [user, setUser] = useState(getUser());
 
   return (
     <main className="App">
@@ -21,7 +22,9 @@ export default function App() {
               {/* Route components in here */}
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/contact-us" element={<ContactPage />} />
-              <Route path="/testimonials" element={<TestimonialsPage />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/results" element={<ResultsPage />} />
+
             </Routes>
           </>
     </main>

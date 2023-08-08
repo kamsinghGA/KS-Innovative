@@ -1,3 +1,31 @@
+/* navbar.css */
+
+.navbar-brand,
+.nav-link {
+    font-size: 16px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #ff6600;
+}
+
 .navbar {
-    position: fixed;
+    background-color: #f5f5f5;
+    margin-right: -69px;
+    margin-left: -65px;
+  }
+  
+  /* Add margin to the body or a container element */
+body {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin-left: 5px; /* Add margin to the container */
+    background-color: #f5f5f5; /* Set background color for the container */
   }

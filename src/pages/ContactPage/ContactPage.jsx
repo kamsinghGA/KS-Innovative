@@ -84,7 +84,6 @@ export default function ContactPage() {
                 </div>
                 <button type='submit'>Submit Request</button>
             </form>
-
         </div>
     );
 }

@@ -1,25 +1,55 @@
+body {
+    /* background-color: aqua; */
+}
+
 .services-section {
     background-color: #F5F5F5;
     padding: 60px 0;
     text-align: center;
-  }
-  .service {
-    display: inline-block;
-    width: 30%;
+}
+.service {
+    border: 1px solid #ccc;
     padding: 20px;
-    margin: 0 1%;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .service-icon img {
+    transition: background-color 0.3s;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.service:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.service-icon img {
     max-width: 60px;
     margin-bottom: 10px;
-  }
-  .service h3 {
+}
+.service h3 {
     margin-top: 10px;
     font-size: 1.5rem;
     color: #333333;
-  }
-  .service p {
+}
+.service p {
     color: #666666;
-  }
+}
+
+.card {
+    text-decoration: none;
+}
+
+.card:hover {
+    text-decoration: none;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+  
+.mb-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}

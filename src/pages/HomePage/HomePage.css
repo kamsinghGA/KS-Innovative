@@ -1,0 +1,20 @@
+.buyingPoints {
+    text-decoration: none;
+}
+
+body{ 
+    background-color: DDDDDD;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh; /* Set the height of the left side to the full viewport height */
+    padding: 2rem;
+    margin-right: auto; /* Push the left side to the left edge of the page */
+    margin-left: 50px; /* Reset any default margin */
+    margin-top: -90px;
+  }
